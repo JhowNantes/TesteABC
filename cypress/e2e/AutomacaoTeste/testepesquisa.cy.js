@@ -4,14 +4,7 @@ describe('Teste de pesquisa de repositórios', () => {
     cy.visit('https://localhost:44329/Home/GetRepositorie');
     cy.get('#Result_Name').type('developer');
     cy.get('button[type="submit"]').click();
-    cy.wait(1000);
     cy.contains('developer').should('be.visible');
-
-    
-    /*cy.get('[data-name]').then(($itens) => {
-      const count = $itens.length;
-      cy.log('Quantidade de resultados: ' + count);
-    });*/
   })
   it('Deve exibir mensagem de erro ao pesquisar sem digitar nada', () => {
     
