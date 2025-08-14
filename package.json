@@ -1,0 +1,14 @@
+{
+  "name": "testeabc",
+  "version": "1.0.0",
+  "description": "Teste Tecnico ABC EVO",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Jhonathan Guedes Nantes",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.5.2"
+  }
+}
